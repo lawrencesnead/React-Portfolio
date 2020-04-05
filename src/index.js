@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from './Header';
 import Footer from './Footer';
+import About from './About';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
@@ -11,6 +12,12 @@ ReactDOM.render(
   document.getElementById('header'),
   
 );
+ReactDOM.render(
+  <React.StrictMode>
+    <About />
+  </React.StrictMode>,
+  document.getElementById('body')
+)
 ReactDOM.render(
   <React.StrictMode>
     <Footer />
